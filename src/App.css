@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.scene {
+  flex: 3;
+  background-size: cover;
+  background-position: center center;
+}
+
+.story-text {
+  flex: 1;
+  padding: 2em;
+}
+
+.choices {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em;
+}
+
+.choices ul {
+  padding: 0;
+}
+
+.choices li {
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  background: rgb(175, 171, 251);
+  cursor: pointer;
+  list-style-type: none;
+}
