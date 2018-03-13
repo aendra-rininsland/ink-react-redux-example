@@ -10,18 +10,22 @@ import Story from "./Story";
 import { makeChoice } from "./state/actions";
 import "./App.css";
 
-const App = props => (
-  <div className="App">
-    <Scene tags={props.tags} />
-    <Story sceneText={props.sceneText} />
-    <Choices choices={props.currentChoices} makeChoice={props.makeChoice} />
-  </div>
-);
+const App = props =>
+  props.ending ? (
+    <div className="ending">🎉🎉 YOU WIN! 🎉🎉</div>
+  ) : (
+    <div className="App">
+      <Scene tags={props.tags} />
+      <Story sceneText={props.sceneText} />
+      <Choices choices={props.currentChoices} makeChoice={props.makeChoice} />
+    </div>
+  );
 
 const stateToProps = state => ({
   tags: state.tags,
   currentChoices: state.currentChoices,
-  sceneText: state.sceneText
+  sceneText: state.sceneText,
+  ending: state.ending
 });
 
 const dispatchToProps = dispatch => ({

@@ -6,6 +6,7 @@
 import { gameLoop, MAKE_CHOICE } from "./actions";
 
 export const INITIAL_STATE = {
+  ending: false,
   ...gameLoop()
 };
 

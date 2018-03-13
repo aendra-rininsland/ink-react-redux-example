@@ -35,3 +35,12 @@
   cursor: pointer;
   list-style-type: none;
 }
+
+.ending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  font-size: 4em;
+}
