@@ -8,7 +8,6 @@ import storyContent from "../cyberian-bot-farmer.json";
 // import storyContent from "../basic.json";
 
 export const ink = new Story(storyContent);
-window.ink = ink;
 
 export const MAKE_CHOICE = "MAKE_CHOICE";
 
